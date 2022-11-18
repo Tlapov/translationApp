@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/34886baf96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div class="container">
+    <div class="textareaContainer">
+        <textarea class="textareaFrom" placeholder="Write something"></textarea>
+        <textarea class="textareaTo" placeholder="Translete...." readonly disabled></textarea>
+    </div>
+    <div class="links">
+        <li class="list">
+            <div class="icons">
+                <i id="iconsFrom" class="fa-solid fa-volume-high"></i>
+                <i id="iconsFrom" class="fa-solid fa-copy"></i>
+            </div>
+            <select></select>
+        </li>
+        <li class="changeIcon">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </li>
+        <li class="list">
+            <div class="icons">
+                <i id="iconsTo" class="fa-solid fa-volume-high"></i>
+                <i id="iconsTo" class="fa-solid fa-copy"></i>
+            </div>
+            <select></select>
+        </li>
+    </div>
+    <button type="submit" class="btn">Translate</button>
+ </div>
+
+<script src="js/app.js" type="module"></script>
+</body>
+</html>

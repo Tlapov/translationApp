@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg, red, blue, green);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    background-color: bisque;
+    color:black;
+    width: 55%;
+    margin: 0 auto;
+    padding: 3.2rem;
+}
+.textareaContainer{
+    width: 100%;
+    display: flex;
+}
+.textareaContainer textarea{
+    width: 100%;
+    height: 25rem;
+    resize: none;
+    padding: 2rem;
+    font-size: 2rem;
+    border: 1px solid grey;
+    background-color: transparent;
+    color:black;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.textareaContainer textarea::placeholder{
+    color:black;
+}
+.textareaContainer textarea:nth-child(1){
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;    
+}
+.textareaContainer textarea:nth-child(2){
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;    
+}
+.links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    border: 1px solid gray;
+}
+.list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.list select{
+    margin-right: 2rem;
+    background-color: transparent;
+    font-size: 2rem;
+}
+.list i{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.list i:hover{
+    color:blueviolet;
+    transform: rotate(360deg);
+}
+
+.changeIcon{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+button{
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 7px;
+    background-color: rgb(35, 155, 35);
+    color:white;
+    font-size: 1.7rem;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    color:black;
+}
+button:active{
+    transform: scale(0.9);
+}
